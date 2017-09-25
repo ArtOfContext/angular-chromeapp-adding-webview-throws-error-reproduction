@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Working case: Webview in Chrome app with vanilla JS - successfully loads webview at start and on event",
+  "description": "Both the webview added at start and one added via button click are displayed properly.",
+  "version": "1.0.0",
+  "permissions": [
+    "webview",
+    "fullscreen",
+    "background"
+  ],
+  "file_handlers": {
+    "any": {
+      "extensions": [
+        "*"
+      ]
+    }
+  },
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  },
+  "minimum_chrome_version": "58",
+  "kiosk_enabled": true,
+  "offline_enabled": true
+}

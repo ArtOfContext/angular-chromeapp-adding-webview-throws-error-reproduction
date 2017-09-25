@@ -1,0 +1,9 @@
+<div>
+  <app-webview *ngIf="showFirstWebview"></app-webview>
+</div>
+
+<div style="padding-top: 30px">
+  <button (click)="showSecondWebview = true">Click to add 2nd webview</button>
+  <app-webview *ngIf="showSecondWebview"></app-webview>
+</div>
+

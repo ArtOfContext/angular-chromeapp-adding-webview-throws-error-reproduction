@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Webview in Chrome app with Angular bug repro - fails to load webview in component on event",
+  "description": "Webview added at start of angular app works.  Webview added via ngIf condition on button click gives error.",
+  "version": "1.0.0",
+  "permissions": [
+    "webview",
+    "fullscreen",
+    "background"
+  ],
+  "file_handlers": {
+    "any": {
+      "extensions": [
+        "*"
+      ]
+    }
+  },
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  },
+  "minimum_chrome_version": "58",
+  "kiosk_enabled": true,
+  "offline_enabled": true
+}
